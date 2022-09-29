@@ -1,5 +1,19 @@
 body{
     overflow-x: hidden;
+    font-family: OpenSans-Regular;
+}
+#advertisement {
+  width: 50%;
+  margin: auto;
+}
+#advertisement p{
+    font-size: 11px;
+    color: #323232;
+    /* line-height: 16px; */
+    text-align: center;
+    text-transform: uppercase;
+    font: 400 15px/20px "OpenSans-Regular";
+    margin-bottom: 0px;
 }
 #top_section{
  width: 80%;
@@ -16,6 +30,7 @@ body{
     display: inline-block;
     vertical-align: top;
     margin-top: 30px;
+    
 }
 #title span a{
     text-decoration: none;
@@ -64,7 +79,66 @@ body{
     font-size: 18px;
 }
 #adver{
+   border:  2px solid #ddd;
+}
+#adver1{
+    width: 100%;
+    height: 350px;
+    margin: auto;
+    background-color: #f2f2f2;
+    text-align: center;
+    display: inline-block;
+     align-items: center;
+    border-bottom: 1px solid #ddd;
+   padding-bottom: -30px;
+}
+#adver1 img{
+    /* margin-top: 0px;
+    width: 70%;
+    margin-top: -15px;
+   margin-bottom: 0px; */
+   width: 310px;
+   height: 260px;
+   margin: auto;
+}
+#adver1 p{
+    font-size: 11px;
+    color: #323232;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    font: 400 15px/20px "OpenSans-Regular";
+     
+}
+.read{
+    display: inline-block;
+    padding: 30px;
+margin-top: 0px;
+}
+.read span{
+  font-size: 20px;
+    font-weight: 700;
+color: #bb0a0a;
+font-family: "OpenSans-Bold";
+
+}
+.read div{
    
+}
+li{
+    padding: 10px 24px 10px 30px;
+    list-style-type: none;
+    display: inline-block;
+}
+li p{
+    display: block;
+overflow: hidden;
+word-wrap: break-word;
+font-size: 15px;
+font-size: .9375rem;
+line-height: 20px;
+color: #111;
+font-family: "OpenSans-Semibold";
 }
 .cont1{
     width: 65% ;
@@ -92,14 +166,34 @@ body{
 .cont2{
     width: 65% ;
     margin-top: 20px;
-   
+   text-align: center;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 15px;
     border-bottom: 2px solid #ddd;
    
 }
+.cont2 p,.cont3 p{
+    color: gray;
+}
 .img2{
     width: 100%;
     height: 250px;
+}
+.cont2 .h2,.cont3 .h2{
+    font-size: 15px;
+}
+.cont3{
+    width: 65% ;
+    margin-top: 20px;
+   text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 15px;
+    border-bottom: 2px solid #ddd;
+   
+}
+.img3{
+    width: 100%;
+    height: 140px;
 }
