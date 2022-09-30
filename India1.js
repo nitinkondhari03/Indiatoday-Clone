@@ -1,6 +1,6 @@
 const Social_data =  async () =>
 {
-    let res= await fetch(`https://newsapi.org/v2/top-headlines?country=in&apiKey=08d99dd982164978a2d91f97ca0065de`);
+    let res= await fetch(`https://newsapi.org/v2/top-headlines?country=in&pageSize=12&apiKey=08d99dd982164978a2d91f97ca0065de`);
     let data=await res.json()
     console.log(data)
     Append(data.articles)
@@ -97,3 +97,13 @@ const Append2 = (data) =>
         div1.append(div2)
     })
 }
+
+
+
+
+
+
+
+
+
+
