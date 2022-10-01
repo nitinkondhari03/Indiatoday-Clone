@@ -284,7 +284,7 @@ span > hr {
   height: 75px;
 }
 
-/* @media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
   #right {
     display: none;
   }
@@ -320,4 +320,4 @@ span > hr {
     margin: auto;
     margin-left: 10px;
   }
-} */
+}

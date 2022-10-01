@@ -9,17 +9,13 @@
 // let footer_div = document.getElementById("footer");
 // footer_div.innerHTML = footer();
 
-
-
 // ---------------------------------------------------------------
-// select code 
+
 
 let flag=false;
 
-
 let main = document.getElementById("checkbox").querySelectorAll(".category");
 for (let i=0; i<main.length; i++){
-    
         
     
         main[i].onclick=function(){
@@ -31,20 +27,26 @@ for (let i=0; i<main.length; i++){
                 image.style.visibility="visible"
                 flag = true;
                 document.getElementById("btn").innerHTML = "SAVE";
+                alert("Got Selected");
             
                 
             }
             else{
                 image.style.visibility="hidden"
                 flag = false;
-                document.getElementById("btn").innerHTML = "SKIP";
+                 document.getElementById("btn").addEventListener("click", () => {
+                   
+                    // alert("Unselected")
+
+                })
               
-                
             }
-            console.log(a)
         }
 }
 
-
+    let b =document.getElementById("btn").addEventListener("click", () =>{
+            alert("Recommendation Choosed successfully");
+    });
+        
 
 
