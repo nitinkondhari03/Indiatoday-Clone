@@ -1,0 +1,129 @@
+#bottompagesd{
+    background-color: black;
+    margin-top: 700px;
+}
+#bottoohml{
+    display: flex; 
+}
+#bottoohml>div>p{
+    color: white;
+    font-size: 25px;
+    margin-top: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+#bottoohml>div:nth-child(1){
+    margin-left: 270px;
+    height: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+   
+}
+.feckbook{
+    height: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.feckbook>img{
+    border-radius: 40%;
+    height: 30px;
+    width: 35px;
+    background-color: white;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.feckbook>div:hover{
+    background-color: yellow;
+}
+
+#matyi{
+    margin-left: 600px;
+}
+
+
+#textr>h1{
+    color: white;
+}
+
+#namesbottom{
+    margin-left: 340px;
+}
+h4{
+    margin-bottom: 20px;
+}
+p{
+    margin-bottom: 10px;
+}
+
+
+#bottompage{
+    display: flex;
+    grid-template-columns: repeat(5,1fr);
+    gap: 30px;
+    margin-top: 20px;
+}
+#bottompage>div>img{
+    margin-top: 20px;
+    margin-right: 60px;
+    cursor: pointer;
+}
+#bottompage>div>h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+}
+#bottompage>div>p{
+    color: #a6a6a6;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+#bottompage>div>p:hover{
+    text-decoration: underline;
+    color: yellow;
+}
+#last_text{
+    text-align: center;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+}
+
+
+#downloadapp{
+    margin: auto;
+}
+#downloadapp>p{
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+#logoplaystore{
+    display: flex;
+    gap: 20px;
+    margin: auto;
+}
+#logoplaystore>div:nth-child(1){
+    margin-left: auto;
+}
+#logoplaystore>div:nth-last-child(1){
+    margin-right:auto ;
+}
+#logoplaystore>div{
+    margin-top: -10px;
+}
+#linesdf{
+    margin-top: 10px;
+    border: 0.5px solid rgb(107, 105, 105);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#last_textsd>p{
+    color: #a6a6a6;
+    text-align: center;
+    font-size: 15px;
+   
+}

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/signup.css">
+</head>
+<body>
+<div>
+        <div id="navbar_signin">
+            <div id="back_button" onclick="backbutton()">
+                <div id="cirlse"><</div>
+                <div><p>Back to India Today</p></div>
+            </div>
+            <div id="today_newzimg">
+                <img src="https://static.wikia.nocookie.net/logopedia/images/6/62/India_Today_Group_Logo.png/revision/latest/scale-to-width-down/220?cb=20190303140655" alt="">
+            </div>
+        </div>
+        
+        <div id="sign_in_via">
+            <div id="line1"></div>
+            <div><p>Sign Up by</p></div>
+            <div id="line2"></div>
+        </div>
+
+        <div class="facebook">
+            <div class="twitt">
+                <div><img src="data:image/png;base64,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" alt=""></div>
+                <div><img src="http://cdn1.sbnation.com/assets/3554691/twitter4.jpg" alt=""></div>
+            </div>
+            <div class="twitt">
+                <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEU6VZ////82Up4zUJ1UbKx4ibswTpyMmsQ5V6EtTJupss8nSJnN0+WVosgqSpo4U56eqcyDksDj5vBwgbb3+PxFXqNabqt9jb3S2OhidbC9xdy3v9l0hLjZ3etLY6bq7fTEyt4dQpdJYqekrs2uttK97JEgAAADFUlEQVR4nO3c2XLiMBBAUUZmM3IsFsNgSIAk/P83TsLzjCNbI3c3de9rqlw+BV7VZDIhIiIiIiIiIiIiIiIiIlJeCM4VxbzsrJDey8G50s/3h91ss3jp7LdJYii8262rbfPr545eem/753y9qWJwjypzwqJuT7E6i0JX7459fOaEvn3r5zMmLPy5r8+W0L9Gn15MCkO9GuAzJHSh9xFoS1hcrsOAVoTzdsghaEhYTAcDbQjdfjjQhDAshx6DRoShrhKAFoR+nQI0ICzaJKABYZlyEFoQ1p9pQPVCd0m4UJgQ+lsiULvQXVKB2oW+1ysZg8KwTAYqF5ZpF3sDQr99cqFLvJ3RL0y+2usXDnw1Y0YYUh58TQiL3X8Aql57Kvschs3xdF/9pftC8fphj3vSalZ6X5tbA/axJ5rtzhdBem+HVEeeaKq55s+po1DHAW/vJj+/yfdifdxX1OYX9LuwjxIejH5Fv3LTGOBJ8eXup+KEH056P4cXJby+S+9mQlHCUy29mwlFCddz6d1MKEq4sXsmjRTOEGoOIUL9IUSoP4QI9YcQof4QItQfQoT6Q4hQR27+78qYucRX37GFR7Jrb65ddBQz1Hbv2sCjpSixvEcgEitlhcN+cNenRnZxagThm+wK6ghC4TXiEYSr8tmFwstvIwhb2XX+EYR72St+fmEj6htDuBW+a8svPArPauQXnp9e+CI8jZJfKP38mF8ofDnML2wuwsOn2YVX6ena7MKt9PRpduHt6YUr6eHM7MKF9HBmduGr9OvU7MKp9BR4bmEjDcwulJ9zzy2U/+1hbqH0s1N+4afsq8QRhPKT/LmFB+kb7+xC6Tua7ELhdacRhOLPTtmFCv7ZQOY14LP4xWISlh2FqFkM17UF8VPpF7Hjb3HTJl2nSwXAzp5jnqYrhAj1hxCh/hAi1B9ChPpDiFB/CBHqDyFC/SFEqD+ECPWHEKH+ECLUH0KE+kOIUH8IEeoPIUL9IUSoP4QI9YcQof4QItQfQoT6Q4hQfwgR6g8hQv0hRKg/hAj1hxCh/hAi1B9ChD36A+1ASVvVoq0WAAAAAElFTkSuQmCC" alt=""></div>
+                <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcRiuCMT2vC_q5VsY8dhjM3oyDOgUt56y_om3HrH7nxiZFGaCo2eHabV2caPhyZWGUAd0&usqp=CAU" alt=""></div>
+            </div>
+            <div class="twitt">
+                <div><img src="data:image/png;base64,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" alt=""></div>
+                <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNKKNLms_MR6r2xE780bY5BHkxVGWxvtELaovl5iyS48OsLd-3_IZQ3qDX0-CoOUk8IvI&usqp=CAU" alt=""></div>
+            </div> 
+        </div>
+        <div id="ori">
+            <p>OR</p>
+        </div>
+
+        <div id="sign_in_mobile">
+            <div id="line3"></div>
+            <div><p>Sign Up using your Email Id/Mobile No.</p></div>
+            <div id="line4"></div>
+        </div>
+        <div id="search">
+            <div >
+                    <div> 
+                        <div id="namaosdO">
+                        <select id="edit-page-country" name="page_country" class="form-select">
+                            <option value="Afghanistan">Afghanistan</option>
+                            <option value="Albania">Albania</option>
+                            <option value="Algeria">Algeria</option>
+                            <option value="Andorra">Andorra</option>
+                            <option value="Angola">Angola</option>
+                            <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Armenia">Armenia</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Austria">Austria</option>
+                            <option value="Azerbaijan">Azerbaijan</option>
+                            <option value="Bahamas">Bahamas</option>
+                            <option value="Bahrain">Bahrain</option>
+                            <option value="Bangladesh">Bangladesh</option>
+                            <option value="Barbados">Barbados</option>
+                            <option value="Belarus">Belarus</option>
+                            <option value="Belgium">Belgium</option>
+                            <option value="Belize">Belize</option>
+                            <option value="Benin">Benin</option>
+                            <option value="Bhutan">Bhutan</option>
+                            <option value="Bolivia">Bolivia</option>
+                            <option value="Bosnia &amp; Herzegovina">Bosnia &amp; Herzegovina</option>
+                            <option value="Botswana">Botswana</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="Brunei">Brunei</option>
+                            <option value="Bulgaria">Bulgaria</option>
+                            <option value="Burkina Faso">Burkina Faso</option>
+                            <option value="Burundi">Burundi</option>
+                            <option value="Cabo Verde">Cabo Verde</option>
+                            <option value="Cambodia">Cambodia</option>
+                            <option value="Cameroon">Cameroon</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Central African Republic">Central African Republic</option>
+                            <option value="Chad">Chad</option>
+                            <option value="Chile">Chile</option>
+                            <option value="China">China</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="Comoros">Comoros</option>
+                            <option value="Congo">Congo</option>
+                            <option value="Costa Rica">Costa Rica</option>
+                            <option value="Cote d'Ivoire">Cote d'Ivoire</option>
+                            <option value="Croatia">Croatia</option>
+                            <option value="Cuba">Cuba</option>
+                            <option value="Cyprus">Cyprus</option>
+                            <option value="Czech Republic">Czech Republic</option>
+                            <option value="DR Congo">DR Congo</option>
+                            <option value="Denmark">Denmark</option>
+                            <option value="Djibouti">Djibouti</option>
+                            <option value="Dominica">Dominica</option>
+                            <option value="Dominican Republic">Dominican Republic</option>
+                            <option value="Ecuador">Ecuador</option>
+                            <option value="Egypt">Egypt</option>
+                            <option value="El Salvador">El Salvador</option>
+                            <option value="Equatorial Guinea">Equatorial Guinea</option>
+                            <option value="Eritrea">Eritrea</option>
+                            <option value="Estonia">Estonia</option>
+                            <option value="Ethiopia">Ethiopia</option>
+                            <option value="Fiji">Fiji</option>
+                            <option value="Finland">Finland</option>
+                            <option value="France">France</option>
+                            <option value="Gabon">Gabon</option>
+                            <option value="Gambia">Gambia</option>
+                            <option value="Georgia">Georgia</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Ghana">Ghana</option>
+                            <option value="Greece">Greece</option>
+                            <option value="Grenada">Grenada</option>
+                            <option value="Guatemala">Guatemala</option>
+                            <option value="Guinea">Guinea</option>
+                            <option value="Guinea-Bissau">Guinea-Bissau</option>
+                            <option value="Guyana">Guyana</option>
+                            <option value="Haiti">Haiti</option>
+                            <option value="Holy See">Holy See</option>
+                            <option value="Honduras">Honduras</option>
+                            <option value="Hungary">Hungary</option>
+                            <option value="Iceland">Iceland</option><option value="India" selected="selected">India</option><option value="Indonesia">Indonesia</option><option value="Iran">Iran</option><option value="Iraq">Iraq</option><option value="Ireland">Ireland</option><option value="Israel">Israel</option><option value="Italy">Italy</option><option value="Jamaica">Jamaica</option><option value="Japan">Japan</option><option value="Jordan">Jordan</option><option value="Kazakhstan">Kazakhstan</option><option value="Kenya">Kenya</option><option value="Kiribati">Kiribati</option><option value="Kosovo">Kosovo</option><option value="Kuwait">Kuwait</option><option value="Kyrgyzstan">Kyrgyzstan</option><option value="Laos">Laos</option><option value="Latvia">Latvia</option><option value="Lebanon">Lebanon</option><option value="Lesotho">Lesotho</option><option value="Liberia">Liberia</option><option value="Libya">Libya</option><option value="Liechtenstein">Liechtenstein</option><option value="Lithuania">Lithuania</option><option value="Luxembourg">Luxembourg</option><option value="Madagascar">Madagascar</option><option value="Malawi">Malawi</option><option value="Malaysia">Malaysia</option><option value="Maldives">Maldives</option><option value="Mali">Mali</option><option value="Malta">Malta</option><option value="Marshall Islands">Marshall Islands</option><option value="Mauritania">Mauritania</option><option value="Mauritius">Mauritius</option><option value="Mexico">Mexico</option><option value="Micronesia">Micronesia</option><option value="Moldova">Moldova</option><option value="Monaco">Monaco</option><option value="Mongolia">Mongolia</option><option value="Montenegro">Montenegro</option><option value="Morocco">Morocco</option><option value="Mozambique">Mozambique</option><option value="Myanmar">Myanmar</option><option value="Namibia">Namibia</option><option value="Nauru">Nauru</option><option value="Nepal">Nepal</option><option value="Netherlands">Netherlands</option><option value="New Zealand">New Zealand</option><option value="Nicaragua">Nicaragua</option><option value="Niger">Niger</option><option value="Nigeria">Nigeria</option><option value="North Korea">North Korea</option><option value="Norway">Norway</option><option value="Oman">Oman</option><option value="Pakistan">Pakistan</option><option value="Palau">Palau</option><option value="Panama">Panama</option><option value="Papua New Guinea">Papua New Guinea</option><option value="Paraguay">Paraguay</option><option value="Peru">Peru</option><option value="Philippines">Philippines</option><option value="Poland">Poland</option><option value="Portugal">Portugal</option><option value="Qatar">Qatar</option><option value="Romania">Romania</option><option value="Russia">Russia</option><option value="Rwanda">Rwanda</option><option value="Saint Kitts &amp; Nevis">Saint Kitts &amp; Nevis</option><option value="Saint Lucia">Saint Lucia</option><option value="Samoa">Samoa</option><option value="San Marino">San Marino</option><option value="Sao Tome &amp; Principe">Sao Tome &amp; Principe</option><option value="Saudi Arabia">Saudi Arabia</option><option value="Senegal">Senegal</option><option value="Serbia">Serbia</option><option value="Seychelles">Seychelles</option><option value="Sierra Leone">Sierra Leone</option><option value="Singapore">Singapore</option><option value="Slovakia">Slovakia</option><option value="Slovenia">Slovenia</option><option value="Solomon Islands">Solomon Islands</option><option value="Somalia">Somalia</option><option value="South Africa">South Africa</option><option value="South Korea">South Korea</option><option value="South Sudan">South Sudan</option><option value="Spain">Spain</option><option value="Sri Lanka">Sri Lanka</option><option value="St. Vincent &amp; Grenadines">St. Vincent &amp; Grenadines</option><option value="State of Palestine">State of Palestine</option><option value="Sudan">Sudan</option><option value="Suriname">Suriname</option><option value="Swaziland">Swaziland</option><option value="Sweden">Sweden</option><option value="Switzerland">Switzerland</option><option value="Syria">Syria</option><option value="TFYR Macedonia">TFYR Macedonia</option><option value="Taiwan">Taiwan</option><option value="Tajikistan">Tajikistan</option><option value="Tanzania">Tanzania</option><option value="Thailand">Thailand</option><option value="Timor-Leste">Timor-Leste</option><option value="Togo">Togo</option><option value="Tonga">Tonga</option><option value="Trinidad and Tobago">Trinidad and Tobago</option><option value="Tunisia">Tunisia</option><option value="Turkey">Turkey</option><option value="Turkmenistan">Turkmenistan</option><option value="Tuvalu">Tuvalu</option><option value="U S">U S</option><option value="Uganda">Uganda</option><option value="Ukraine">Ukraine</option><option value="United Arab Emirates">United Arab Emirates</option><option value="United Kingdom">United Kingdom</option><option value="Uruguay">Uruguay</option><option value="Uzbekistan">Uzbekistan</option><option value="Vanuatu">Vanuatu</option><option value="Venezuela">Venezuela</option><option value="Viet Nam">Viet Nam</option><option value="Yemen">Yemen</option><option value="Zambia">Zambia</option><option value="Zimbabwe">Zimbabwe</option>
+                        </select>
+                        </div>
+                </div>
+                <div id="naskd"> <input id="fname" type="text" placeholder="Enter Your Full Name"></div>
+               
+            </div>
+            <div >
+                <input id="email" type="text" placeholder="Enter Your Email">
+                <input id="password" type="text" placeholder="Enter your Password">
+                
+            </div>
+        </div>
+            <div class="cheak" id="nsdd">
+                 <div> <input type="checkbox" id="checkbox" /></div>
+                 <div><p id="remem">I agree to the SSO login privacy terms and I warrant that I am above 16 years of age. *</p></div>
+            </div>
+            <div class="cheak">
+                <div> <input type="checkbox" id="checkbox" /></div>
+                <div><p id="remem">I agree to the processing of my personal information for profiling such as My Credits, Follow activity , Personalised recommendations and Advertisements.</p></div>
+           </div>
+           <div class="cheak">
+            <div> <input type="checkbox" id="checkbox" /></div>
+            <div><p id="remem">I wish to receive custom communications i.e. Emails, newsletters, SMS, notifications from India Today based on my interests and my activities on the website.</p></div>
+       </div>
+
+            <div id="forgot">
+                <div>
+                    <p>* Mandatory Fields</p>
+                </div>
+                <div id="login_otp">
+                    <p>Already registered?</p>
+                    <p id="signin" onclick="signinf()">Sign in »</p>
+                </div>
+            </div>
+
+
+            <div id="login_button" onclick="signUp(event)">
+                <button>sign up</button>
+            </div>
+
+            <div id="login_last">
+                <div><p>One Network One Account</p></div>
+                <div><img src="https://smedia2.intoday.in/aajtak/aajtakhd/images/aajtakHd_logo.png?bypass=true" alt=""></div>
+                <div><img src="https://akm-img-a-in.tosshub.com/sites/all/themes/itg/logo.png?576" alt=""></div>
+                <div><img src="https://akm-img-a-in.tosshub.com/sites/btmt/businesstoday/resources/css/images/btnav-newlogo.png?size=48:21" alt=""></div>
+            </div>
+
+            <div id="copyright">
+                <p>Copyright © 2022 Living Media India Limited. For reprint rights: Syndications Today</p>
+            </div>
+</div>
+<div id="navbar"></div>
+<ul>
+    <li>
+      <a href="#">Travel more </a>
+      <div id="submenu">
+        <ul>
+          <li>
+            <a href="./stays.html"
+              ><img
+                src="https://img.icons8.com/ios-filled/20/000000/hotel-star.png"
+                class="sub-logo"
+              />Stays</a
+            >
+          </li>
+          <li>
+            <a href="./flights.html"
+              ><img
+                src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/20/000000/external-flight-interface-kiranshastry-solid-kiranshastry.png"
+                class="sub-logo"
+              />
+              Flights</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/pastel-glyph/20/000000/car--v1.png"
+                class="sub-logo"
+              />Cars</a
+            >
+          </li>
+          <li>
+            <a href="./vacation.html"
+              ><img
+                src="https://img.icons8.com/external-wanicon-lineal-wanicon/20/000000/external-suitcase-travel-wanicon-lineal-wanicon.png"
+                class="sub-logo"
+              />Packages</a
+            >
+          </li>
+          <li>
+            <a href="./things.html"
+              ><img
+                src="https://img.icons8.com/dotty/20/000000/two-tickets.png"
+                class="sub-logo"
+              />Things to do</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/external-glyph-andi-nur-abdillah/20/000000/external-Cruiser-military-(glyph)-glyph-andi-nur-abdillah.png"
+                class="sub-logo"
+              />Cruises</a
+            >
+          </li>
+          <li><a href="#">Deals</a></li>
+          <li><a href="#">Groups & meetings</a></li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+ </div>
+</body>
+</html>
+<script src="./script/signup.js"></script>
