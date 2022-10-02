@@ -1,10 +1,23 @@
 body{
     overflow-x: hidden;
 }
+#adv {
+    width: 48%;
+    height: 100px;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+  }
+  #adv > p {
+    font-size: 12px;
+  }
+  #adv > img {
+    width: 100%;
+  }
 #container{
-    width: 70%;
-    height: 200px;
-    
+    width: 80%;
+    /* height: 200px;
+     */
     margin: auto;
     margin-top: 20px;
 }
@@ -117,7 +130,7 @@ padding: 0;
 margin-top: 40px;
 }
 .ul li{
-    width: 290px;
+    width: 300px;
 float: left;
 border-right: 1px solid #efefef;
 padding-right: 15px;
@@ -175,3 +188,5 @@ margin: 21px auto 13px;
 width: 140px;
 text-align: center;
 }
+
+ 
