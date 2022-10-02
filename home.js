@@ -1,7 +1,11 @@
 
-let API = "788064e404bb4146a46b604f5b05b845";
+// let API = "788064e404bb4146a46b604f5b05b845";
 
-let api = "52dd17af551c4652818b0ce69e4b2530";
+// let api = "52dd17af551c4652818b0ce69e4b2530";
+
+let API = "05eb14a459ed44f2aafbcde325d266a1";
+
+let api = "c651b3a97285417587d0f71f16e42732";
 
 let url = "https://masai-mock-api-2.herokuapp.com/news/top-headlines?country=in&PageSize=2";
 
@@ -104,7 +108,7 @@ let movies = async () => {
 }
 
 let movies2 = async () => {
-    let res = await fetch(`https://newsapi.org/v2/top-headlines?country=in&category=entertainment&PageSize=2&apiKey=788064e404bb4146a46b604f5b05b845`);
+    let res = await fetch(`https://newsapi.org/v2/top-headlines?country=in&category=entertainment&PageSize=2&apiKey=${API}`);
 
     let data = await res.json();
 
@@ -153,7 +157,7 @@ let technologies = async () => {
 }
 
 let technologies2 = async () => {
-    let res = await fetch("https://newsapi.org/v2/top-headlines?country=in&category=technology&PageSize=2&apiKey=788064e404bb4146a46b604f5b05b845");
+    let res = await fetch(`https://newsapi.org/v2/top-headlines?country=in&category=technology&PageSize=2&apiKey=${API}`);
     
 
     let data = await res.json();
@@ -201,7 +205,7 @@ let sports = async () => {
 }
 
 let sports2 = async () => {
-    let res = await fetch("https://newsapi.org/v2/top-headlines?country=in&category=sports&PageSize=2&apiKey=788064e404bb4146a46b604f5b05b845");
+    let res = await fetch(`https://newsapi.org/v2/top-headlines?country=in&category=sports&PageSize=2&apiKey=${API}`);
 
     let data = await res.json();
 
@@ -249,7 +253,7 @@ let lifes = async () => {
 }
 
 let lifes1 = async () => {
-    let res = await fetch("https://newsapi.org/v2/top-headlines?country=in&category=health&PageSize=2&apiKey=788064e404bb4146a46b604f5b05b845");
+    let res = await fetch(`https://newsapi.org/v2/top-headlines?country=in&category=health&PageSize=2&apiKey=${API}`);
 
     let data = await res.json();
 
@@ -273,6 +277,7 @@ let lifes1 = async () => {
 }
 
 let Trend = async () => {
+
     let res = await fetch(`https://newsapi.org/v2/top-headlines?country=in&category=general&PageSize=1&apiKey=${api}`);
 
     let data = await res.json();
@@ -297,7 +302,7 @@ let Trend = async () => {
 }
 
 let Trend1 = async () => {
-    let res = await fetch("https://newsapi.org/v2/top-headlines?country=in&category=general&PageSize=2&apiKey=788064e404bb4146a46b604f5b05b845");
+    let res = await fetch(`https://newsapi.org/v2/top-headlines?country=in&category=general&PageSize=2&apiKey=${API}`);
 
     let data = await res.json();
 
@@ -345,7 +350,7 @@ let india = async () => {
 }
 
 let india1 = async () => {
-    let res = await fetch(`https://newsapi.org/v2/top-headlines?country=in&category=sports&PageSize=2&apiKey=${api}`);
+    let res = await fetch(`https://newsapi.org/v2/top-headlines?country=in&category=sports&PageSize=2&apiKey=${API}`);
 
     let data = await res.json();
 
@@ -537,17 +542,20 @@ const indi=()=>{
 
 
 
-// results()
-// // results1()
-// movies()
-//  movies2()
-//  technologies()
-//  technologies2()
-//  sports()
-//  sports2()
-//  lifes()
-//  lifes1()
-//  Trend()
-//  Trend1()
-//  india()
-// india1()
+results()
+
+movies()
+ movies2()
+ technologies()
+ technologies2()
+ sports()
+ sports2()
+ lifes()
+ lifes1()
+ Trend()
+ Trend1()
+ india()
+india1()
+
+
+// not required results1()

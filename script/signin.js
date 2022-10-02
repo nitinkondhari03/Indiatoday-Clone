@@ -51,7 +51,7 @@ let logIn = JSON.parse(localStorage.getItem("logIn")) || false;
       localStorage.setItem("username", JSON.stringify(username));
       let sorrynam=document.getElementById('sorrynam')
       sorrynam.style.display='none'
-      window.location.href = "./navbar.html";
+      window.location.href = "./index.html";
     } else if (flag1 && flag2 === false) {
       alert("Wrong Password Entered");
       let sorrynam=document.getElementById('sorrynam')
