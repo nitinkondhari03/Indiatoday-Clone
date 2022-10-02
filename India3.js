@@ -1,7 +1,7 @@
 let main = async () => {
     try {
       let res = await fetch(
-        `https://newsapi.org/v2/top-headlines?country=in&apiKey=08d99dd982164978a2d91f97ca0065de&pageSize=10&page=1`
+        `https://newsapi.org/v2/top-headlines?country=in&apiKey=05eb14a459ed44f2aafbcde325d266a1&pageSize=10&page=1`
       );
       let data = await res.json();
       console.log("data:", data.articles);
@@ -35,7 +35,7 @@ let main = async () => {
   let Show = async () => {
       try {
         let response = await fetch(
-          `https://newsapi.org/v2/top-headlines?country=in&apiKey=08d99dd982164978a2d91f97ca0065de&pageSize=4&category=science`);
+          `https://newsapi.org/v2/top-headlines?country=in&apiKey=05eb14a459ed44f2aafbcde325d266a1&pageSize=4&category=science`);
         let data = await response.json();
       //   console.log("data:", data.articles);
         show_news(data.articles)
@@ -70,7 +70,7 @@ let main = async () => {
     let Sports = async () => {
       try {
         let response = await fetch(
-          `https://newsapi.org/v2/top-headlines?country=in&category=sports&pageSize=4&apiKey=08d99dd982164978a2d91f97ca0065de`);
+          `https://newsapi.org/v2/top-headlines?country=in&category=sports&pageSize=4&apiKey=05eb14a459ed44f2aafbcde325d266a1`);
         let data = await response.json();
       //   console.log("data:", data.articles);
         sportsnews(data.articles)
@@ -106,7 +106,7 @@ let main = async () => {
     let Health = async () => {
       try {
         let response = await fetch(
-          `https://newsapi.org/v2/top-headlines?country=in&category=health&pageSize=1&apiKey=08d99dd982164978a2d91f97ca0065de`
+          `https://newsapi.org/v2/top-headlines?country=in&category=health&pageSize=1&apiKey=05eb14a459ed44f2aafbcde325d266a1`
         );
         let data = await response.json();
       //   console.log("data:", data.articles);
@@ -143,7 +143,7 @@ let main = async () => {
     let enter = async () => {
       try {
         let response = await fetch(
-          `https://newsapi.org/v2/top-headlines?country=in&category=entertainment&pageSize=10&apiKey=08d99dd982164978a2d91f97ca0065de`
+          `https://newsapi.org/v2/top-headlines?country=in&category=entertainment&pageSize=10&apiKey=05eb14a459ed44f2aafbcde325d266a1`
         );
         let data = await response.json();
       //   console.log("data:", data.articles);
@@ -179,7 +179,7 @@ let main = async () => {
     let business = async () => {
       try {
         let response = await fetch(
-          `https://newsapi.org/v2/top-headlines?country=in&category=business&pageSize=6&apiKey=08d99dd982164978a2d91f97ca0065de`
+          `https://newsapi.org/v2/top-headlines?country=in&category=business&pageSize=6&apiKey=05eb14a459ed44f2aafbcde325d266a1`
         );
         let data = await response.json();
       //   console.log("data:", data.articles);
@@ -232,7 +232,7 @@ let main = async () => {
   
   
       console.log(e)
-      fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=c651b3a97285417587d0f71f16e42732&pageSize=10&page=${e}`).then((res)=> {
+      fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=05eb14a459ed44f2aafbcde325d266a1&pageSize=10&page=${e}`).then((res)=> {
         return (res.json());
       }).then((data) => {
         // console.log(data.articles);
